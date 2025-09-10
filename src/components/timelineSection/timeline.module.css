@@ -1,0 +1,112 @@
+.timelineSection {
+  background: #fafafa;
+  padding: 60px 0;
+  position: relative;
+}
+
+/* wrapper holds the vertical center line */
+.timelineWrapper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Vertical center line (runs from below globe to the end) */
+.timelineWrapper::before {
+  content: "";
+  position: absolute;
+  top: 70px;              /* globe ke niche se line start */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-53%);
+  width: 4px;
+  background: var(--primary-color);
+  z-index: 0; /* dots aur content ke peeche */
+}
+
+/* globe circle style */
+.globeIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  z-index: 2;
+  position: relative;
+  transform: rotate(16deg);
+}
+
+/* year text */
+.year {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* dot style (button for accessibility) */
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-hover);
+  background: #fff;
+  cursor: pointer;
+  z-index: 2; /* line ke upar */
+  position: relative;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.dot:hover {
+  transform: scale(1.12);
+}
+
+.activeDot {
+  background: var(--primary-color);
+}
+
+/* content card that appears on opposite side */
+.contentBox {
+  max-width: 420px;
+  width: 100%;
+  /* background: #fff; */
+  background: var(--primary-color);
+  color: #fff;
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(13, 38, 59, 0.06);
+  z-index: 2;
+  position: relative;
+}
+
+/* center dot wrapper with no extra width */
+.dotWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px; /* sirf dot ke liye jagah */
+  position: relative;
+}
+
+
+/* responsive tweaks for mobile */
+@media (max-width: 767px) {
+  /* line shift left side */
+  .timelineWrapper::before {
+    left: 20px;
+  }
+
+  .dot {
+    margin: 6px 0;
+  }
+
+  .contentBox {
+    max-width: 100%;
+  }
+
+  .invisible {
+    display: none !important;
+  }
+}

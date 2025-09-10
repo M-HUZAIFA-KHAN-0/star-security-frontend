@@ -1,0 +1,23 @@
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 8px;
+    color: #FFFFFF;
+    background: var(--primary-color);
+    border-radius: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+}
+.service-item:hover .btn {
+    width: 140px;
+}

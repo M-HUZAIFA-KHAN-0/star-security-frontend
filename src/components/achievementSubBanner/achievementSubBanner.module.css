@@ -1,0 +1,26 @@
+.achievementBanner {
+  position: relative;
+  z-index: 0; /* create stacking context */
+  min-height: 350px;
+  background-image: url("/images/counter-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Overlay */
+.achievementBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.712);
+  z-index: -1;
+}
+

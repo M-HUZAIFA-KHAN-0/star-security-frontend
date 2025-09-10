@@ -1,0 +1,124 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* navbar roots */
+  /* Colors */
+  --primary-color: #68D520;
+  --primary-hover: #57B01C;
+  --text-color: #333333;
+  --black-color: #000000;
+  --bg-color: #ffffff;
+
+  /* Fonts */
+  --font-size-base: 14px;
+  --font-size-logo: 2.2rem;
+  --font-size-mobile-logo: 20px;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+
+  /* Navbar */
+  --navbar-height: 80px;
+  --navbar-padding-y: 15px;
+
+  --cta-text-color: #ffffff;
+}
+
+.bg-primary{
+  background-color: var(--primary-color) !important;
+}
+.color-w{
+  color: #ffffff;
+}
+.color-primary{
+  color: var(--primary-color) !important;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+.cta-hover:hover{
+  background: var(--primary-hover) !important;
+  color: var(--background);
+}
+
+
+
+/*** Join Section start ***/
+
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: var(--primary-color) !important;   /* 👈 apna pasand ka color */
+  box-shadow: 0 0 0 0.15rem rgb(100 189 41 / 70%) !important; /* halka glow same color me */
+  outline: none !important;
+}
+
+/* Optional: hover par bhi border color change ho */
+.form-control:hover,
+.form-select:hover,
+textarea:hover {
+  border-color: var(--primary-color) !important;
+}
+
+
+@media (min-width: 992px) {
+  .container.quote {
+    max-width: 100% !important;
+  }
+
+  .quote-text {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
+  }
+}
+@media (min-width: 1200px) {
+  .quote-text {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  }
+}
+@media (min-width: 1400px) {
+  .quote-text {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  }
+}
+
+
+/*** Join Section end ***/
