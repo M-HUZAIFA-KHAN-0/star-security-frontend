@@ -3,13 +3,10 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Shield, Users, MapPin, Award, Clock, CheckCircle } from "lucide-react";
 
 import Banner from "@/components/mainBanner/mainBanner";
-import Facts from "@/components/facts/facts";
 import AboutSection from "@/components/aboutSection/aboutSection";
 import Testimonial from "@/components/testimonial/testimonial";
 import JointSection from "@/components/joinSection/joinSection";
-import Footer from "@/components/footer/footer";
 import ParallaxSection from "@/components/parallaxSection/parallaxSection";
-import OfferSection from "@/components/offerSection/OfferSection";
 import FeatureSection from "@/components/featureSection/featureSection";
 import AchievementSubBanner from "@/components/achievementSubBanner/achievementSubBanner";
 import Timeline from "@/components/timelineSection/timeline";
@@ -65,7 +62,6 @@ export default function About() {
       <TeamSection />
       <Testimonial />
       <JointSection />
-      <Footer />
     </>
   );
 }

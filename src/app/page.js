@@ -9,7 +9,6 @@ import AboutSection from "@/components/aboutSection/aboutSection";
 import Services from "@/components/services/services";
 import Testimonial from "@/components/testimonial/testimonial";
 import JointSection from "@/components/joinSection/joinSection";
-import Footer from "@/components/footer/footer";
 import ParallaxSection from "@/components/parallaxSection/parallaxSection";
 import OfferSection from "@/components/offerSection/OfferSection";
 import TeamSection from "@/components/teamSection/teamSection";
@@ -40,6 +39,40 @@ export default function Home() {
           ctalink: "#",
       };
 
+      
+  const servicesData = [
+    {
+      id: 1,
+      title: "Commercial CCTV System",
+      desc: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem",
+      icon: "icon/icon-6.png",
+    },
+    {
+      id: 2,
+      title: "Finger Print Access",
+      desc: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem",
+      icon: "icon/icon-8.png",
+    },
+    {
+      id: 3,
+      title: "Fire Detection And Safety",
+      desc: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem",
+      icon: "icon/icon-9.png",
+    },
+    {
+      id: 4,
+      title: "Smart Home Security",
+      desc: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem",
+      icon: "icon/icon-3.png",
+    },
+    {
+      id: 5,
+      title: "Access Control System",
+      desc: "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem",
+      icon: "icon/icon-2.png",
+    },
+  ];
+
 
 
   return (
@@ -53,13 +86,12 @@ export default function Home() {
       />
       <Facts />
       <AboutSection aboutData={aboutData} />
-      <Services />
+      <Services servicesData={servicesData} topHeading = "Our Services"/>
       <ParallaxSection />
       <OfferSection />
       <TeamSection />
       <Testimonial />
       <JointSection />
-      <Footer />
     </>
   );
 }

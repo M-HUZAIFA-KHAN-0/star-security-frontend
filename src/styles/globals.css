@@ -33,6 +33,13 @@
 .color-primary{
   color: var(--primary-color) !important;
 }
+.service_BG{
+  background-color: #171717;
+;
+}
+.black-color{
+  background-color: black;
+}
 
 
 @media (prefers-color-scheme: dark) {
