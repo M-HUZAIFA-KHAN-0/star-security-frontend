@@ -4,6 +4,8 @@
 ===================== */
 .pos-r {
   position: relative;
+  z-index: -2;
+  color: white;
 }
 
 /* =====================
@@ -13,12 +15,12 @@
   position: relative;
 }
 .step-num {
-  background: #fff;
+  background: var(--primary-color);
   border-radius: 50%;
-  box-shadow: 0 12px 20px 0 rgba(117, 178, 240, 0.4);
+  /* box-shadow: 0 12px 25px 0 #68d52063; */
   /* color: #005bea; */
   /* color: var(--primary-color); */
-  color: rgba(0, 0, 0, 0.541);
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
@@ -27,7 +29,8 @@
   line-height: 55px;
   position: absolute;
   text-align: center;
-  top: 0;
+  top: -12px;
+  right: -7px;
   width: 50px;
 }
 .theme-bg .work-process h4,
@@ -35,16 +38,16 @@
   color: #ffffff;
 }
 .step-icon {
-  background: #ffffff;
-  width: 140px;
-  height: 140px;
+  background: var(--like-black-BG);
+  width: 125px;
+  height: 125px;
   position: relative;
-  border: 3px solid #fafaff;
+  /* border: 3px solid #fafaff; */
+  box-shadow: 0 3px 25px 0 #68d52063;
   border-radius: 50%;
   line-height: 140px;
   font-size: 40px;
   text-align: center;
-  color: #1c1d3e;
 }
 .step-icon span {
   position: relative;
@@ -78,6 +81,8 @@
 
 .step-desc {
   padding: 0 20px;
+  margin-top: 30px;
+  background-color: var(--like-black-BG);
 }
 
 .step-num-box {
@@ -87,7 +92,7 @@
 }
 .work-process .box-loader {
   position: absolute;
-  top: 30%;
+  top: 18%;
   right: -15%;
   left: inherit;
 }
@@ -124,8 +129,9 @@
 
 .svg-container {
   position: absolute;
-  width: 75%;
-  left: 52%;
+  width: 80%;
+  left: 50%;
+  top: 33%;
   z-index: -1;
   transform: translateX(-50%);
 }
@@ -282,10 +288,18 @@
   }
   .svg-container {
     width: 100%;
+    height: 100%;
     transform: rotate(90deg);
     left: 0;
-    top: 50%;
+    top: 0%;
   }
+  .step-desc {
+    margin-top: 0;
+  }
+  .work-process{
+    margin-bottom: 70px;
+  }
+
 }
 @media (max-width: 768px) {
   .step-icon {
@@ -310,4 +324,8 @@
     width: 20px;
     right: -5px;
   }
+  .svg-container {
+    display: none;
+  }
+  
 }

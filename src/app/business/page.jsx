@@ -5,12 +5,32 @@ import Banner from "@/components/mainBanner/mainBanner";
 import Services from "@/components/services/services";
 import ServicesCards from "@/components/servicesCard/servicesCard";
 import SplitSection from "@/components/splitSection/splitSection";
+import TeamSection from "@/components/teamSection/teamSection";
+import Testimonial from "@/components/testimonial/testimonial";
 import WorkProcess from "@/components/workProcess/workProcess";
+import JointSection from "@/components/joinSection/joinSection";
+
 
 
 export default function BusinessPage() {
+  
 
-  const servicesData = [
+  // ******* First ********
+
+  const SplitSectionDataFirst = {
+    heading: "Manned Guarding",
+    para:
+    <>
+      Star Security Service provides a wide range of manned guarding solutions for industries, banks, retail outlets, residential colonies, hotels, and institutions. With professionalism and reliability at the core, Star Security deploys trained personnel to safeguard people, property, and assets across all environments. From static guards at offices, malls, hospitals, and schools to specialized teams like fire squads, dog squads, and bodyguards, we ensure complete protection and peace of mind.
+      <br /><br />
+      Alongside traditional guarding, Star Security Service delivers specialized roles that strengthen security frameworks, including access control, reception security, patrolling, event management, VIP protection, and quick reaction units for emergencies. We also provide armed guards for high-risk zones, lady guards for sensitive premises, and operators skilled in CCTV and alarm monitoring.
+      <br /><br />
+      Our sector-specific solutions cover 24/7 bank and ATM security, parking management, and construction site protection, while in hospitality, our guards combine security expertise with guest-friendly service. With this diverse portfolio, Star Security stands as a trusted partner for professional and adaptable security solutions.
+    </>,
+    img: "/images/t1.jpg",
+  };
+
+  const servicesDataFirst = [
     {
       id: 1,
       title: "Professional Female Guards",
@@ -19,7 +39,7 @@ export default function BusinessPage() {
     },
     {
       id: 2,
-      title: "Bank / ATM Security",
+      title: "24/7 Bank and ATM Protection",
       desc: "Round-the-clock protection for banks, ATMs, and financial institutions.",
       icon: "icon/doorman.png",
     },
@@ -56,58 +76,76 @@ export default function BusinessPage() {
   ];
 
 
-  const SplitSectionDataFirst = {
-    heading: "Manned Guarding",
+  // ******* Second ********
+  
+  const SplitSectionDataSecond = {
+    heading: "Electronic Security Systems",
     para:
     <>
-      Star Security Service provides a wide range of manned guarding solutions for industries, banks, retail outlets, residential colonies, hotels, and institutions. With professionalism and reliability at the core, Star Security deploys trained personnel to safeguard people, property, and assets across all environments. From static guards at offices, malls, hospitals, and schools to specialized teams like fire squads, dog squads, and bodyguards, we ensure complete protection and peace of mind.
+      Star Security Service’s Electronic Security Systems division delivers advanced technology-driven solutions that protect businesses, institutions, and residential facilities with precision and reliability. Working in close partnership with reputed system integrators and installers, we specialize in the design, installation, and maintenance of a wide range of electronic security infrastructure tailored to modern safety needs.
       <br /><br />
-      Alongside traditional guarding, Star Security Service delivers specialized roles that strengthen security frameworks, including access control, reception security, patrolling, event management, VIP protection, and quick reaction units for emergencies. We also provide armed guards for high-risk zones, lady guards for sensitive premises, and operators skilled in CCTV and alarm monitoring.
+      Our portfolio covers access control systems for regulated entry and exit, CCTV surveillance for continuous monitoring, and fire alarm and suppression systems to prevent and manage fire hazards. We also provide intruder and burglar alarms to guard against unauthorized access, along with perimeter protection systems that secure boundaries and critical zones. Each solution is backed by robust technology, expert implementation, and consistent maintenance to ensure maximum uptime and reliability.
       <br /><br />
-      Our sector-specific solutions cover 24/7 bank and ATM security, parking management, and construction site protection, while in hospitality, our guards combine security expertise with guest-friendly service. With this diverse portfolio, Star Security stands as a trusted partner for professional and adaptable security solutions.
+      By combining advanced equipment, skilled professionals, and strong customer partnerships, Star Security Service ensures that clients receive end-to-end electronic security solutions that are both scalable and adaptable. Whether it’s enhancing workplace safety, safeguarding financial institutions, or protecting residential communities, our Electronic Security Systems division stands as a trusted partner in building safer and smarter environments.
     </>,
     img: "/images/t1.jpg",
   };
-
-  const servicesCardData = [
+  
+  const servicesDataSecond = [
     {
-      img: "/images/hero-1.jpg",
-      title: "Secured Cash-in-Transit",
-      desc: "Safe and reliable armored transport of cash and valuables, ensuring complete protection from collection to delivery.",
-      link: "/private-security",
+      id: 1,
+      title: "Access Control Systems",
+      desc: "Restricts and manages entry/exit with smart cards, biometrics, or keypads for enhanced security.",
+      icon: "icon/fingerprint.png",
     },
     {
-      img: "/images/hero-1.jpg",
-      title: "ATM Replenishment Services",
-      desc: "Timely and accurate ATM cash loading with strict compliance, so your customers never face downtime.",
-      link: "/transport-security",
+      id: 2,
+      title: "Surveillance & Monitoring Solutions",
+      desc: "24/7 monitoring and recording solutions for real-time visibility and incident review.",
+      icon: "icon/cctv-camera.png",
     },
     {
-      img: "/images/hero-1.jpg",
-      title: "Vaulting & Processing Solutions",
-      desc: "State-of-the-art vaults and professional cash handling teams to count, verify, and process funds securely.",
-      link: "/home-security",
+      id: 3,
+      title: "Smart Fire Alarm Solutions",
+      desc: "Early detection and alert systems to warn occupants and minimize fire risks.",
+      icon: "icon/fire-detector.png",
     },
     {
-      img: "/images/hero-1.jpg",
-      title: "Multi-Point Cash Collection",
-      desc: "Flexible pickup solutions from multiple locations with end-to-end tracking for full accountability.",
-      link: "/private-security",
+      id: 4,
+      title: "Fire Suppression Systems",
+      desc: "Automated solutions like sprinklers or gas-based systems to control and extinguish fires.",
+      icon: "icon/extinguiser.png",
     },
     {
-      img: "/images/hero-1.jpg",
-      title: "Cash Protection Services",
-      desc: "Dedicated staff to manage daily cash handling and safeguard financial transactions at your premises.",
-      link: "/transport-security",
+      id: 5,
+      title: "Intruder & Burglar Alarms",
+      desc: "Sensors and alarms that instantly detect unauthorized access or break-ins.",
+      icon: "icon/thief.png",
     },
     {
-      img: "/images/hero-1.jpg",
-      title: "Valuables & Asset Transfer",
-      desc: "Secure movement of high-value items like jewelry, documents, or precious metals with maximum confidentiality.",
-      link: "/home-security",
+      id: 6,
+      title: "Perimeter Protection Systems",
+      desc: "Secures the outer boundaries of facilities with fences, sensors, and surveillance technology.",
+      icon: "icon/protection.png",
+    },
+    {
+      id: 7,
+      title: "Remote Monitoring Services",
+      desc: "24/7 off-site monitoring by trained security professionals to reduce risks.",
+      icon: "icon/tv-monitor.png",
+    },
+    {
+      id: 8,
+      title: "Response Communication",
+      desc: "Public address (PA) and mass notification systems for crisis management.",
+      icon: "icon/emergency-response.png",
     },
   ];
-  const SplitSectionDataSecond = {
+
+
+  // ******* Third ********
+
+  const SplitSectionDataThird = {
     heading: "Cash Services",
     para:
     <>
@@ -119,6 +157,105 @@ export default function BusinessPage() {
     </>,
     img: "/images/t2.jpg",
   }
+  
+  const servicesDataThird = [
+    {
+      id: 1,
+      title: "Secured Cash-in-Transit",
+      desc: "Safe and reliable armored transport of cash and valuables, ensuring complete protection from collection to delivery.",
+      icon: "icon/money-truck.png",
+    },
+    {
+      id: 2,
+      title: "ATM Replenishment Services",
+      desc: "Timely and accurate ATM cash loading with strict compliance, so your customers never face downtime.",
+      icon: "icon/web-positioning.png",
+    },
+    {
+      id: 3,
+      title: "Secure Vaulting & Processing",
+      desc: "State-of-the-art vaults and professional cash handling teams to count, verify, and process funds securely.",
+      icon: "icon/flow-chart.png",
+    },
+    {
+      id: 4,
+      title: "Multi-Point Cash Collection",
+      desc: "Flexible pickup solutions from multiple locations with end-to-end tracking for full accountability.",
+      icon: "icon/income.png",
+    },
+    {
+      id: 5,
+      title: "Cash Protection Services",
+      desc: "Dedicated staff to manage daily cash handling and safeguard financial transactions at your premises.",
+      icon: "icon/safebox.png",
+    },
+    {
+      id: 6,
+      title: "Valuables & Asset Transfer",
+      desc: "Secure movement of high-value items like jewelry, documents, or precious metals with maximum confidentiality.",
+      icon: "icon/computer.png",
+    },
+  ]
+
+  // ******* Fourth ********
+
+  const SplitSectionDataFourth = {
+    heading: "Recruitment & Training Solutions",
+    para:
+    <>
+      Star Security Service’s Recruitment & Training division is dedicated to sourcing, preparing, and delivering skilled manpower tailored to the specific needs of each client and division. We follow a systematic process to identify the right candidates, ensuring they meet both technical and behavioral standards required in the security industry.
+      <br /><br />
+      Our specialized training programs focus on discipline, professional conduct, and job-specific skills, preparing recruits to handle real-world challenges with confidence. From security officers and control room operators to specialized roles in cash management, hospitality, and electronic security, we ensure every individual is equipped with the knowledge and capability to perform effectively.
+      <br /><br />
+      By combining rigorous recruitment standards with comprehensive training, Star Security Service provides clients with reliable, well-prepared manpower. This approach not only strengthens operational efficiency but also guarantees that organizations receive personnel who are trustworthy, skilled, and aligned with their security and service requirements.
+    </>,
+    img: "/images/t2.jpg",
+  }
+
+
+
+
+
+
+
+  // const servicesCardData = [
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "Secured Cash-in-Transit",
+  //     desc: "Safe and reliable armored transport of cash and valuables, ensuring complete protection from collection to delivery.",
+  //     link: "/private-security",
+  //   },
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "ATM Replenishment Services",
+  //     desc: "Timely and accurate ATM cash loading with strict compliance, so your customers never face downtime.",
+  //     link: "/transport-security",
+  //   },
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "Vaulting & Processing Solutions",
+  //     desc: "State-of-the-art vaults and professional cash handling teams to count, verify, and process funds securely.",
+  //     link: "/home-security",
+  //   },
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "Multi-Point Cash Collection",
+  //     desc: "Flexible pickup solutions from multiple locations with end-to-end tracking for full accountability.",
+  //     link: "/private-security",
+  //   },
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "Cash Protection Services",
+  //     desc: "Dedicated staff to manage daily cash handling and safeguard financial transactions at your premises.",
+  //     link: "/transport-security",
+  //   },
+  //   {
+  //     img: "/images/hero-1.jpg",
+  //     title: "Valuables & Asset Transfer",
+  //     desc: "Secure movement of high-value items like jewelry, documents, or precious metals with maximum confidentiality.",
+  //     link: "/home-security",
+  //   },
+  // ];
 
 
 
@@ -136,10 +273,16 @@ export default function BusinessPage() {
         cta="GET APPOINTMENT"
       />
       <SplitSection SplitSectionData = {SplitSectionDataFirst}/>
-      <Services servicesData = {servicesData}  service_BG = "true" topHeading = "Our Manned Guarding Services"/>
+      <Services servicesData = {servicesDataFirst}  service_BG = "true" topHeading = "Our Manned Guarding Services"/>
       <SplitSection SplitSectionData = {SplitSectionDataSecond} isImgFirst = "true"/>
-      <ServicesCards data={servicesCardData} />
+      <Services servicesData = {servicesDataSecond}  service_BG = "true" topHeading = "Our Electronic Security Services"/>
+      <SplitSection SplitSectionData = {SplitSectionDataThird}/>
+      <Services servicesData = {servicesDataThird}  service_BG = "true" topHeading = "Our Cash Services"/>
+      <SplitSection SplitSectionData = {SplitSectionDataFourth} isImgFirst = "true"/>
       <WorkProcess />
+      <TeamSection />
+      <Testimonial />
+      <JointSection />
     </>
   );
 }

@@ -20,11 +20,11 @@ function Navigation() {
 
     const navLinks = [
         { href: "/", label: "HOME" },
-        { href: "/about", label: "ABOUT US" },
         { href: "/business", label: "OUR BUSINESS" },
         { href: "/network", label: "OUR NETWORK" },
         { href: "/careers", label: "CAREERS" },
         { href: "/clients", label: "CLIENTS" },
+        { href: "/about", label: "ABOUT US" },
         { href: "/testimonials", label: "TESTIMONIALS" },
     ];
 
