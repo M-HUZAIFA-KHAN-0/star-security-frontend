@@ -1,9 +1,7 @@
 "use client";
 
-// import FeatureSection from "@/components/featureSection/featureSection";
 import Banner from "@/components/mainBanner/mainBanner";
 import Services from "@/components/services/services";
-import ServicesCards from "@/components/servicesCard/servicesCard";
 import SplitSection from "@/components/splitSection/splitSection";
 import TeamSection from "@/components/teamSection/teamSection";
 import Testimonial from "@/components/testimonial/testimonial";
@@ -211,55 +209,6 @@ export default function BusinessPage() {
     </>,
     img: "/images/t2.jpg",
   }
-
-
-
-
-
-
-
-  // const servicesCardData = [
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "Secured Cash-in-Transit",
-  //     desc: "Safe and reliable armored transport of cash and valuables, ensuring complete protection from collection to delivery.",
-  //     link: "/private-security",
-  //   },
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "ATM Replenishment Services",
-  //     desc: "Timely and accurate ATM cash loading with strict compliance, so your customers never face downtime.",
-  //     link: "/transport-security",
-  //   },
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "Vaulting & Processing Solutions",
-  //     desc: "State-of-the-art vaults and professional cash handling teams to count, verify, and process funds securely.",
-  //     link: "/home-security",
-  //   },
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "Multi-Point Cash Collection",
-  //     desc: "Flexible pickup solutions from multiple locations with end-to-end tracking for full accountability.",
-  //     link: "/private-security",
-  //   },
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "Cash Protection Services",
-  //     desc: "Dedicated staff to manage daily cash handling and safeguard financial transactions at your premises.",
-  //     link: "/transport-security",
-  //   },
-  //   {
-  //     img: "/images/hero-1.jpg",
-  //     title: "Valuables & Asset Transfer",
-  //     desc: "Secure movement of high-value items like jewelry, documents, or precious metals with maximum confidentiality.",
-  //     link: "/home-security",
-  //   },
-  // ];
-
-
-
-
 
 
   return (
