@@ -1,0 +1,110 @@
+
+.Branches_BG{
+    background-color: var(--like-black-BG);
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+    /* top: 0; */
+}
+
+.customBtn {
+  padding: 8px 50px;
+  border: 2px solid #666666ce;
+  border-radius: 9999px; /* capsule shape */
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666666ce;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.customBtn:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-color);
+}
+
+.active {
+  border-color: var(--primary-hover);
+  color: var(--primary-color);
+  /* background: #fff; */
+}
+
+
+.scrollContainer {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera ke liye */
+}
+
+
+.cardCustom {
+  transition: 0.4s all ease-in;
+  border: none;
+  margin: 25px auto;
+  position: relative;
+}
+
+.cardImg {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.productDetail {
+  position: absolute;
+  height: 70px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 23px 15px;
+  background-color: rgb(0 0 0 / 90%);
+  transition: all 0.3s;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cardCustom h5 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.subheading {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cardCustom:hover .productDetail {
+    height: calc(92%);
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.branchesBtn{
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+.branchesBtn:hover{
+    border-color: var(--primary-hover) !important;
+    background-color: var(--primary-hover) !important;
+    color: white !important;
+}

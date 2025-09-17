@@ -2,6 +2,11 @@
 
 import BranchSection from "@/components/branches/branches";
 import ServicesCards from "@/components/servicesCard/servicesCard";
+import Banner from "@/components/mainBanner/mainBanner";
+import TeamSection from "@/components/teamSection/teamSection";
+import Testimonial from "@/components/testimonial/testimonial";
+import JointSection from "@/components/joinSection/joinSection";
+import AchievementSubBanner from "@/components/achievementSubBanner/achievementSubBanner";
 
 
 export default function NetworkPage() {
@@ -115,9 +120,21 @@ points: [
 };
   return (
     <>
+      <Banner
+        bgImage="/images/hero-1.jpg"
+        subheading="Our Network"
+        heading="Branches & Locations"
+        text="Explore our extensive network of branches and locations, strategically positioned to serve you better. Find the nearest branch for personalized assistance and reliable services."
+        cta="Contact Us"
+      />
+      <BranchSection />
+      <AchievementSubBanner />
+      <TeamSection />
+      <Testimonial />
+      <JointSection />
       {/* <ServicesCards  data={servicesCardData}/> */}
-      <BranchSection branchSectionData = {branchSectionDataOne} isImgFirst={true} />
-      <BranchSection branchSectionData = {branchSectionDataTwo} />
+      {/* <BranchSection branchSectionData = {branchSectionDataOne} isImgFirst={true} /> */}
+      {/* <BranchSection branchSectionData = {branchSectionDataTwo} /> */}
     </>
   );
 }
