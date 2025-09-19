@@ -3,21 +3,22 @@
 import Image from "next/image";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import styles from "./aboutSection.module.css";
 
 export default function AboutSection({ aboutData }) {
   return (
     <div className="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-      <div className="container about px-lg-0">
+      <div className="container quote px-lg-0">
         <div className="row g-0 mx-lg-0">
+
           {/* Left Image Section */}
           <div className="col-lg-6 ps-lg-0" style={{ minHeight: "450px" }}>
             <div className="position-relative h-100">
-              <Image
-                src={aboutData.bgImage}
-                alt="About"
-                fill
+              <img
                 className="position-absolute img-fluid w-100 h-100"
+                src={aboutData.bgImage}
                 style={{ objectFit: "cover" }}
+                alt="quote"
               />
             </div>
           </div>
@@ -27,7 +28,7 @@ export default function AboutSection({ aboutData }) {
             className="col-lg-6 about-text wow fadeIn d-flex align-items-center"
             data-wow-delay="0.5s"
           >
-            <div className="p-lg-5 pe-lg-0">
+            <div className={`${styles["aboutSectionCenter"]} p-lg-5 pe-lg-0`}>
               <div
                 className="bg-primary mb-3"
                 style={{ width: "60px", height: "3px" }}
@@ -49,7 +50,7 @@ export default function AboutSection({ aboutData }) {
                     <div
                       key={item.id}
                       ref={ref}
-                      className="col-sm-6 wow fadeIn"
+                      className={`${styles["res-col-12"]} col-sm-6 wow fadeIn`}
                       data-wow-delay={`${0.1 + index * 0.2}s`}
                     >
                       <div className="d-flex align-items-center">

@@ -25,7 +25,7 @@ function Navigation() {
         { href: "/careers", label: "CAREERS" },
         { href: "/clients", label: "CLIENTS" },
         { href: "/about", label: "ABOUT US" },
-        { href: "/testimonials", label: "TESTIMONIALS" },
+        // { href: "/testimonials", label: "TESTIMONIALS" },
     ];
 
     return (
@@ -106,7 +106,7 @@ function Navigation() {
                                 <div className={styles.mobileLoginContainer}>
                                     <Link
                                         href="/contact"
-                                        className={`btn ${styles.mobileLoginBtn}`}
+                                        className={`btn ${styles.navBtn}`}
                                         onClick={handleClose}
                                     >
                                         CONTACT US

@@ -7,6 +7,7 @@ import TeamSection from "@/components/teamSection/teamSection";
 import Testimonial from "@/components/testimonial/testimonial";
 import JointSection from "@/components/joinSection/joinSection";
 import AchievementSubBanner from "@/components/achievementSubBanner/achievementSubBanner";
+import HalfBanner from "@/components/halfBanner/halfBanner";
 
 
 export default function NetworkPage() {
@@ -120,12 +121,11 @@ points: [
 };
   return (
     <>
-      <Banner
+      <HalfBanner 
         bgImage="/images/hero-1.jpg"
         subheading="Our Network"
         heading="Branches & Locations"
         text="Explore our extensive network of branches and locations, strategically positioned to serve you better. Find the nearest branch for personalized assistance and reliable services."
-        cta="Contact Us"
       />
       <BranchSection />
       <AchievementSubBanner />

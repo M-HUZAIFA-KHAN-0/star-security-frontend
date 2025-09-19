@@ -1,0 +1,35 @@
+.jobCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid var(--primary-color) !important;
+}
+.jobCard:hover {
+  transform: translateY(-0.5px);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0px 22px #5ebd20cc !important;
+}
+
+.searchBox {
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 8px !important;
+  transition: 0.3s ease;
+}
+
+.searchBox:focus {
+  outline: none;
+  box-shadow: 0 0 18px #5ebd20cc !important;
+}
+
+.cta {
+    background: var(--primary-color);
+    color: var(--cta-text-color);
+    font-weight: 700;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .cta:hover {
+    background: var(--primary-hover);
+  }

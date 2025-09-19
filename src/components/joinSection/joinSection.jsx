@@ -8,6 +8,7 @@ export default function joinSection() {
     <div className="container-fluid bg-light overflow-hidden my-5 px-lg-0">
       <div className="container quote px-lg-0">
         <div className="row g-0 mx-lg-0">
+          
           {/* Left Image */}
           <div className="col-lg-6 ps-lg-0" style={{ minHeight: "400px" }}>
             <div className="position-relative h-100">

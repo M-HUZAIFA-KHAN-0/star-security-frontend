@@ -1,0 +1,40 @@
+.featuresSection {
+  padding: 60px 0;
+  background-color: #111; /* Dark background */
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: start;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border: 1.5px solid var(--primary-hover);
+  transform: translateY(-1.5px);
+  /* box-shadow: 0 4px 15px #5ebd20cc; */
+  box-shadow: 0px 1px 12px #5ebd20cc;
+}
+
+.icon {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}

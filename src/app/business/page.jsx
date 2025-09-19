@@ -7,6 +7,7 @@ import TeamSection from "@/components/teamSection/teamSection";
 import Testimonial from "@/components/testimonial/testimonial";
 import WorkProcess from "@/components/workProcess/workProcess";
 import JointSection from "@/components/joinSection/joinSection";
+import HalfBanner from "@/components/halfBanner/halfBanner";
 
 
 
@@ -210,16 +211,43 @@ export default function BusinessPage() {
     img: "/images/t2.jpg",
   }
 
+  // ******* Process ********
+
+  const stepsData = [
+    {
+      id: "01",
+      title: "Recruitment",
+      desc: "Identifying and attracting the right candidates through structured hiring channels and partnerships.",
+      icon: "fa-solid fa-user-plus",
+    },
+    {
+      id: "02",
+      title: "Screening",
+      desc: "Conducting background checks and assessments to ensure reliability, skill, and trustworthiness.",
+      icon: "fa-solid fa-user-check",
+    },
+    {
+      id: "03",
+      title: "Training",
+      desc: "Providing classroom sessions and on-site practical training to prepare recruits for real-world roles.",
+      icon: "fa-solid fa-chalkboard-teacher",
+    },
+    {
+      id: "04",
+      title: "Deployment",
+      desc: "Assigning trained staff to relevant divisions for effective and professional service delivery",
+      icon: "fa-solid fa-user-tie",
+    },
+  ];
 
   return (
 
     <>
-      <Banner
+      <HalfBanner 
         bgImage="/images/hero-1.jpg"
-        subheading="We Provide The Best"
-        heading="Security Service"
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        cta="GET APPOINTMENT"
+        subheading="Our Network"
+        heading="Branches & Locations"
+        text="Explore our extensive network of branches and locations, strategically positioned to serve you better. Find the nearest branch for personalized assistance and reliable services."
       />
       <SplitSection SplitSectionData = {SplitSectionDataFirst}/>
       <Services servicesData = {servicesDataFirst}  service_BG = "true" topHeading = "Our Manned Guarding Services"/>
@@ -228,7 +256,7 @@ export default function BusinessPage() {
       <SplitSection SplitSectionData = {SplitSectionDataThird}/>
       <Services servicesData = {servicesDataThird}  service_BG = "true" topHeading = "Our Cash Services"/>
       <SplitSection SplitSectionData = {SplitSectionDataFourth} isImgFirst = "true"/>
-      <WorkProcess />
+      <WorkProcess steps = {stepsData}  topHeading = "Our Recruitment & Training Process"/>
       <TeamSection />
       <Testimonial />
       <JointSection />

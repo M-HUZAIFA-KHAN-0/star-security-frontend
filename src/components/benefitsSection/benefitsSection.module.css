@@ -1,0 +1,5 @@
+.iconWrapper {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(13, 110, 253, 0.1); /* bootstrap primary/10 */
+}

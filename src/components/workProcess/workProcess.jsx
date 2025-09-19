@@ -2,34 +2,8 @@
 
 import styles from "./workProcess.module.css";
 
-export default function WorkProcess() {
-  const steps = [
-    {
-      id: "01",
-      title: "Recruitment",
-      desc: "Identifying and attracting the right candidates through structured hiring channels and partnerships.",
-      // icon: "bi-person-plus",
-      icon: "fa-solid fa-user-plus",
-    },
-    {
-      id: "02",
-      title: "Screening",
-      desc: "Conducting background checks and assessments to ensure reliability, skill, and trustworthiness.",
-      icon: "fa-solid fa-user-check",
-    },
-    {
-      id: "03",
-      title: "Training",
-      desc: "Providing classroom sessions and on-site practical training to prepare recruits for real-world roles.",
-      icon: "fa-solid fa-chalkboard-teacher",
-    },
-    {
-      id: "04",
-      title: "Deployment",
-      desc: "Assigning trained staff to relevant divisions for effective and professional service delivery",
-      icon: "fa-solid fa-user-tie",
-    },
-  ];
+export default function WorkProcess({steps , topHeading}) {
+  
 
   return (
     <section className={`text-center ${styles["pos-r"]} py-5 service_BG `}>
@@ -40,7 +14,7 @@ export default function WorkProcess() {
             className="bg-primary mb-3 mx-auto"
             style={{ width: "60px", height: "3px" }}
           />
-          <h1 className="display-5 mb-5">Our Recruitment & Training Process</h1>
+          <h1 className="display-5 mb-5">{topHeading}</h1>
         </div>
 
         <div className="row ">

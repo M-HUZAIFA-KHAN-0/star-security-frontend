@@ -11,6 +11,7 @@ import FeatureSection from "@/components/featureSection/featureSection";
 import AchievementSubBanner from "@/components/achievementSubBanner/achievementSubBanner";
 import Timeline from "@/components/timelineSection/timeline";
 import TeamSection from "@/components/teamSection/teamSection";
+import HalfBanner from "@/components/halfBanner/halfBanner";
 
 
 export default function About() {
@@ -47,12 +48,11 @@ export default function About() {
 
   return (
     <>
-      <Banner
+      <HalfBanner
         bgImage="/images/hero-1.jpg"
         subheading="We Provide The Best"
         heading="Security Service"
         text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        cta="GET APPOINTMENT"
       />
       <AboutSection aboutData={aboutData} />
       <ParallaxSection />

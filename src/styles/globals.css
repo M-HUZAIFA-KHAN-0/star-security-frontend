@@ -44,6 +44,9 @@
 .black-color{
   background-color: black;
 }
+.bg-muted {
+  background-color: rgba(0, 0, 0, 0.03);
+}
 
 
 @media (prefers-color-scheme: dark) {
