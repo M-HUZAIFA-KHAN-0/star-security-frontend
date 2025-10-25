@@ -13,40 +13,40 @@ export default function OfferSection() {
     },
     {
       type: "card",
-      icon: "bi-gear", // bootstrap icons
+      icon: "bi-gear",
       title: "CCTV Installation",
-      text: "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
-      img: "/images/about.jpg",
+      text: "High-definition CCTV cameras with professional installation to monitor, record, and secure your premises 24/7.",
+      img: "/images/cctv-installation.jpg",
     },
     {
       type: "card",
-      icon: "bi-wifi",
-      title: "Wireless Networking",
-      text: "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
-      img: "/images/about.jpg",
+      icon: "bi-house-gear-fill",
+      title: "Smart Home Security",
+      text: "Advanced home automation and alarm systems that safeguard your family with real-time monitoring and alerts.",
+      img: "/images/home-security.jpg",
     },
     {
       type: "card",
-      icon: "bi-fingerprint",
-      title: "Finger Print Access",
-      text: "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
-      img: "/images/about.jpg",
+      icon: "bi-cash-stack",
+      title: "Cash Protection Services",
+      text: "Secure transportation and handling of cash and valuables with trained staff and armored vehicles.",
+      img: "/images/cash-protection.png",
     },
     {
       type: "card",
-      icon: "bi-camera",
-      title: "Closed Cameras",
-      text: "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
-      img: "/images/about.jpg",
+      icon: "bi-diagram-3",
+      title: "Secure Vaulting & Processing",
+      text: "State-of-the-art vaults and professional cash handling teams to count, verify, and process funds securely.",
+      img: "/images/secure-processing.jpg",
     },
     {
       type: "card",
-      icon: "bi-camera-video",
-      title: "Security Cameras",
-      text: "Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage",
-      img: "/images/about.jpg",
+      icon: "bi-newspaper",
+      title: "Access Control Systems",
+      text: "Smart card, biometric, and keypad-based systems to regulate and monitor entry points with precision.",
+      img: "/images/access-control.jpg",
     },
-    
+        
   ];
 
   return (

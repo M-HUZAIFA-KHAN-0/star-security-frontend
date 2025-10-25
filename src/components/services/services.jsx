@@ -140,7 +140,7 @@ export default function Services({ servicesData = [], service_BG = false, topHea
                         <p className="mb-4">{service.desc}</p>
                       </div>
 
-                      <a className={`${styles["btn"]} fw-bolder mt-auto`} href="">
+                      <a className={`${styles["btn"]} fw-bolder mt-auto`} href="/contact">
                         <i className="fa-solid fa-arrow-right fa-lg text-white me-3" />
                         Read More
                       </a>
@@ -165,7 +165,7 @@ export default function Services({ servicesData = [], service_BG = false, topHea
                         <p className="mb-4">{service.desc}</p>
                       </div>
 
-                      <a className={`${styles["btn"]} fw-bolder mt-auto`} href="">
+                      <a className={`${styles["btn"]} fw-bolder mt-auto`} href="/contact">
                         <i className="fa-solid fa-arrow-right fa-lg text-white me-3" />
                         Read More
                       </a>

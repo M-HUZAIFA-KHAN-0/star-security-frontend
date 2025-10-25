@@ -90,14 +90,19 @@ export default function JobSection({ jobs = [], regions = [], topHeading }) {
                       ))}
                     </ul>
                   </div>
-
+                
                   <div className="small text-muted">Posted {job.posted}</div>
+                  <div className={`${styles.leftBorder} border-start border-5 shadow-sm p-3 mt-2 bg-body rounded`} >
+                
+                    <span className="fw-semibold text-center"><i className="bi bi-envelope-fill primary-hover"></i><span className="fw-light"> Send your resume to:</span> starsecurity@gmail.com </span>
+
+                  </div>
+          
                 </div>
 
-                <div className="mt-3 mt-lg-0 ms-lg-4">
-                  {/* <button className="btn btn-primary">Apply Now</button> */}
-                  <button className={styles.cta}>Apply Now</button>
-                </div>
+                {/* <div className="mt-3 mt-lg-0 ms-lg-4">
+                  <a href="/contact" className={styles.cta}>Apply Now</a>
+                </div> */}
               </div>
             </div>
           ))}

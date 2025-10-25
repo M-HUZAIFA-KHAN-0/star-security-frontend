@@ -14,7 +14,7 @@ export default function WorkProcess({steps , topHeading}) {
             className="bg-primary mb-3 mx-auto"
             style={{ width: "60px", height: "3px" }}
           />
-          <h1 className="display-5 mb-5">{topHeading}</h1>
+          <h1 className="display-5 mb-5 p-1">{topHeading}</h1>
         </div>
 
         <div className="row ">

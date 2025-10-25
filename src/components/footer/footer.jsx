@@ -22,16 +22,16 @@ export default function Footer() {
               <i className="fa fa-envelope"></i>info@example.com
             </p>
             <div className="d-flex pt-2">
-              <Link href="#" className={styles.socialBtn}>
+              <Link href="https://x.com/" className={styles.socialBtn}>
                 <i className="fab fa-twitter"></i>
               </Link>
-              <Link href="#" className={`${styles.socialBtn} ms-2`}>
+              <Link href="https://www.facebook.com/" className={`${styles.socialBtn} ms-2`}>
                 <i className="fab fa-facebook-f"></i>
               </Link>
-              <Link href="#" className={`${styles.socialBtn} ms-2`}>
+              <Link href="https://www.youtube.com/" className={`${styles.socialBtn} ms-2`}>
                 <i className="fab fa-youtube"></i>
               </Link>
-              <Link href="#" className={`${styles.socialBtn} ms-2`}>
+              <Link href="https://www.linkedin.com/" className={`${styles.socialBtn} ms-2`}>
                 <i className="fab fa-linkedin-in"></i>
               </Link>
             </div>
@@ -40,40 +40,40 @@ export default function Footer() {
             {/* Services */}
             <div className="col-lg-3 col-md-6">
                 <h5>Services</h5>
-                <Link href="#" className={styles.btnLink}>
+                <Link href="/business" className={styles.btnLink}>
                     Business Security
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Fire Detection
+                <Link href="/business/#manned-guarding" className={styles.btnLink}>
+                    Manned Guarding
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Alarm Systems
+                <Link href="/business/#electronic-security" className={styles.btnLink}>
+                    Electronic Security
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    CCTV & Video
+                <Link href="/business/#cash-services" className={styles.btnLink}>
+                    Cash Services
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Smart Home
+                <Link href="/business/#recruitment-training" className={styles.btnLink}>
+                    Training Process
                 </Link>
             </div>
 
             {/* Quick Links */}
             <div className="col-lg-3 col-md-6">
                 <h5>Quick Links</h5>
-                <Link href="#" className={styles.btnLink}>
+                <Link href="/about" className={styles.btnLink}>
                     About Us
                 </Link>
-                <Link href="#" className={styles.btnLink}>
+                <Link href="/contact" className={styles.btnLink}>
                     Contact Us
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Our Services
+                <Link href="/business" className={styles.btnLink}>
+                    Our Business
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Terms & Condition
+                <Link href="/careers" className={styles.btnLink}>
+                    Careers
                 </Link>
-                <Link href="#" className={styles.btnLink}>
-                    Support
+                <Link href="/network" className={styles.btnLink}>
+                    Our Network
                 </Link>
             </div>
 
@@ -104,7 +104,7 @@ export default function Footer() {
             <Link href="#">Terms & Conditions</Link>
           </div>
           <div>
-            <Link href="#" className={styles.logo}>
+            <Link href="/" className={styles.logo}>
               <span className={styles.logoColor}>Star </span>
               <span className={styles.logoColor2}>Security</span>
             </Link>

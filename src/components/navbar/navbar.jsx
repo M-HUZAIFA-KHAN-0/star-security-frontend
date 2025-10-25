@@ -25,7 +25,6 @@ function Navigation() {
         { href: "/careers", label: "CAREERS" },
         { href: "/clients", label: "CLIENTS" },
         { href: "/about", label: "ABOUT US" },
-        // { href: "/testimonials", label: "TESTIMONIALS" },
     ];
 
     return (
@@ -75,48 +74,55 @@ function Navigation() {
             </Navbar>
 
             {/* Mobile Offcanvas Menu */}
-            {showOffcanvas && (
-                <div className={styles.offcanvasBackdrop} onClick={handleBackdropClick}>
-                    <div className={`${styles.offcanvas} ${showOffcanvas ? styles.show : ""}`}>
-                        <div className={styles.offcanvasHeader}>
-                            <div className={styles.offcanvasTitle}>
-                                <span className={styles.logoYellow}>Star </span>
-                                <span className={styles.logoBlack}>Security</span>
+            <div
+                className={`${styles.offcanvasBackdrop} ${
+                    showOffcanvas ? styles.show : ""
+                }`}
+                onClick={handleBackdropClick}
+            >
+                <div
+                    className={`${styles.offcanvas} ${
+                        showOffcanvas ? styles.show : ""
+                    }`}
+                >
+                    <div className={styles.offcanvasHeader}>
+                        <div className={styles.offcanvasTitle}>
+                            <span className={styles.logoYellow}>Star </span>
+                            <span className={styles.logoBlack}>Security</span>
+                        </div>
+                        <button
+                            className={styles.closeButton}
+                            onClick={handleClose}
+                            aria-label="Close menu"
+                        >
+                            ×
+                        </button>
+                    </div>
+                    <div className={styles.offcanvasBody}>
+                        <Nav className={styles.mobileNav}>
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className={styles.mobileNavLink}
+                                    onClick={handleClose}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                            <div className={styles.mobileLoginContainer}>
+                                <Link
+                                    href="/contact"
+                                    className={`btn ${styles.navBtn}`}
+                                    onClick={handleClose}
+                                >
+                                    CONTACT US
+                                </Link>
                             </div>
-                            <button
-                                className={styles.closeButton}
-                                onClick={handleClose}
-                                aria-label="Close menu"
-                            >
-                                ×
-                            </button>
-                        </div>
-                        <div className={styles.offcanvasBody}>
-                            <Nav className={styles.mobileNav}>
-                                {navLinks.map((link) => (
-                                    <Link
-                                        key={link.href}
-                                        href={link.href}
-                                        className={styles.mobileNavLink}
-                                        onClick={handleClose}
-                                    >
-                                        {link.label}
-                                    </Link>
-                                ))}
-                                <div className={styles.mobileLoginContainer}>
-                                    <Link
-                                        href="/contact"
-                                        className={`btn ${styles.navBtn}`}
-                                        onClick={handleClose}
-                                    >
-                                        CONTACT US
-                                    </Link>
-                                </div>
-                            </Nav>
-                        </div>
+                        </Nav>
                     </div>
                 </div>
-            )}
+            </div>
         </>
     );
 }

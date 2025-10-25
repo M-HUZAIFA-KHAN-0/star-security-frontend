@@ -1,37 +1,49 @@
 .team_section_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block; /* ✅ prevents Swiper zoom bug */
+  text-align: center;
 }
 
 .team_section .box {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   overflow: hidden;
   margin-top: 45px;
-  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .team_section .box .img-box {
+  position: relative;
   width: 100%;
+  height: auto;
 }
 
 .team_section .box .img-box img {
   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
+/* ✅ Gradient overlay fix */
 .team_section .box .detail-box {
   position: absolute;
-  width: 100%;
-  color: #ffffff;
-  padding: 25px 15px;
-  padding-top: 65px;
-  text-align: center;
+  /* left: 0;
   bottom: 0;
-  /* background-color: #68d520b8; */
-  background: linear-gradient(rgba(255, 0, 0, 0), #5ebd20cc);
+  right: 0;
+  width: 100%; */
+  left: 16px;
+  bottom: 16px;
+  right: 0;
+  width: 91.5%;
+  color: #ffffff;
+  padding: 25px 15px 15px;
+  text-align: center;
+  background: linear-gradient(rgba(255, 0, 0, 0), #000000cc);
+  box-sizing: border-box;
 }
 
 .layout_padding {
@@ -53,3 +65,64 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+
+@media (max-width: 1150px) {
+  .team_section .box .detail-box {
+    width: 91%;
+  }
+}
+@media (max-width: 1095px) {
+  .team_section .box .detail-box {
+    width: 90.5%;
+  }
+}
+@media (max-width: 1025px) {
+  .team_section .box .detail-box {
+    width: 89.5%;
+  }
+}
+@media (max-width: 991px) {
+  .team_section .box .detail-box {
+    width: 92.5%;
+  }
+}
+@media (max-width: 838px) {
+  .team_section .box .detail-box {
+    width: 91.2%;
+  }
+}
+@media (max-width: 721px) {
+  .team_section .box .detail-box {
+    width: 90.2%;
+  }
+}
+@media (max-width: 665px) {
+  .team_section .box .detail-box {
+    width: 89.5%;
+  }
+}
+@media (max-width: 601px) {
+  .team_section .box .detail-box {
+    width: 88%;
+  }
+}
+@media (max-width: 576px) {
+  .team_section .box .detail-box {
+    width: 93.2%;
+  }
+}
+@media (max-width: 455px) {
+  .team_section .box .detail-box {
+    width: 92%;
+  }
+}
+@media (max-width: 410px) {
+  .team_section .box .detail-box {
+    width: 91%;
+  }
+}
+
+
+    

@@ -33,3 +33,6 @@
   .cta:hover {
     background: var(--primary-hover);
   }
+  .leftBorder{
+    border-color: var(--primary-color) !important;
+  }

@@ -92,21 +92,17 @@
 
 
 /* responsive tweaks for mobile */
-@media (max-width: 767px) {
-  /* line shift left side */
-  .timelineWrapper::before {
-    left: 20px;
+@media (max-width: 440px) {
+  .contentBox{
+    padding: 8px;
   }
-
-  .dot {
-    margin: 6px 0;
+  .resFontSize {
+    font-size: 13px;
   }
-
-  .contentBox {
-    max-width: 100%;
+  .dotWrapper {
+    width: 25px;
   }
-
-  .invisible {
-    display: none !important;
+  .year {
+    font-size: 24px;
   }
 }

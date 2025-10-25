@@ -10,12 +10,12 @@ export default function AchievementSubBanner() {
   const stats = [
     {
       icon: "bi bi-person-fill",
-      number: 102,
+      number: 196,
       label: "Happy Clients",
     },
     {
       icon: "bi bi-briefcase-fill",
-      number: 250,
+      number: 270,
       label: "Projects Completed",
     },
     {
@@ -25,7 +25,7 @@ export default function AchievementSubBanner() {
     },
     {
       icon: "bi bi-people-fill",
-      number: 50,
+      number: 150,
       label: "Team Members",
     },
   ];
@@ -59,7 +59,7 @@ export default function AchievementSubBanner() {
                   />
                 ) : (
                   "0"
-                )}
+                )}+
               </div>
               <div className="mb-3 fs-5 fw-bolder">{stat.label}</div>
               <div

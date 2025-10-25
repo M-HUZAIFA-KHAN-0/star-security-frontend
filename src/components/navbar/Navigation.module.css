@@ -382,3 +382,43 @@
   }
 }
 
+/* Backdrop with fade transition */
+.offcanvasBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.offcanvasBackdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Offcanvas with smooth slide transition */
+.offcanvas {
+  width: 390px;
+  background-color: var(--bg-color);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  position: fixed;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}

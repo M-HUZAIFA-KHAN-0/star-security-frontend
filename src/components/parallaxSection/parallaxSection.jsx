@@ -3,21 +3,13 @@
 import Link from "next/link";
 import styles from "./parallaxSection.module.css";
 
-export default function ParallaxSection() {
-  // JSON data object
-  const sectionData = {
-    heading: <>
-          Welcome to{" "}
-          <span style={{ color: "var(--primary-color)" }}>Our Service</span>
-        </>,
-    para: "We provide the best solutions for your business.",
-    // optionalPara: "This is an optional paragraph, you can remove it if not needed.",
-    ctaText: "Get Started",
-    ctaHref: "/get-started",
-  };
+export default function ParallaxSection({sectionData}) {
 
   return (
-    <section className={`${styles.parallax} d-flex align-items-center`}>
+    <section
+      className={`${styles.parallax} d-flex align-items-center`}
+      style={{ backgroundImage: `url("${sectionData.img}")` }}
+    >
       <div className="container text-center text-white">
         <h1 className="mb-4 fw-bold">{sectionData.heading}</h1>
         <p className="mb-3">{sectionData.para}</p>

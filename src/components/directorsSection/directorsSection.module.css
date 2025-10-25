@@ -1,0 +1,22 @@
+.sectionPadding {
+  padding: 60px 0;
+}
+
+.customCardHover {
+  border: 1px solid var(--primary-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.customCardHover:hover {
+  transform: translateY(-0.5px);
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); */
+  box-shadow: 0 3px 25px 0 #68d5208a;
+
+}
+
+.directorImg {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}

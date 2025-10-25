@@ -17,10 +17,11 @@ export default function Banner({ bgImage, subheading, heading, text, cta }) {
       <div className={styles.content}>
         <p className={styles.subheading}>{subheading}</p>
         <h1 className={styles.heading}>
-          {heading.split(" ")[0]} <span>{heading.split(" ")[1]}</span>
+          {heading}
+          {/* {heading.split(" ")[0]} <span>{heading.split(" ")[1]}</span> */}
         </h1>
         <p className={styles.text}>{text}</p>
-        <button className={styles.cta}>{cta}</button>
+        <a href="/contact" className={styles.cta}>{cta}</a>
       </div>
     </section>
   );

@@ -24,10 +24,10 @@ export default function ClientsPage() {
     // <ComingSoon />
     <>
       <HalfBanner 
-        bgImage="/images/hero-1.jpg"
-        subheading="Our Network"
-        heading="Branches & Locations"
-        text="Explore our extensive network of branches and locations, strategically positioned to serve you better. Find the nearest branch for personalized assistance and reliable services."
+        bgImage="/images/client-banner.png"
+        subheading="our clients"
+        heading="Trusted by Leading Brands"
+        text="Over the years, we have partnered with top organizations, delivering reliable security services that protect their operations, employees, and customers."
       />
       <ClientsSection clients={clients} />;
       <AchievementSubBanner />

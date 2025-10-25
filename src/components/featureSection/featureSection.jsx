@@ -4,24 +4,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./featureSection.module.css";
 
-export default function FeatureSection() {
-  const sections = [
-    {
-      heading: "Chairman",
-      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cta: "More information",
-      img: "/images/t1.jpg",
-      reverse: false,
-    },
-    {
-      heading: "Board Of Directors",
-      text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      cta: "More information",
-      img: "/images/t3.jpg",
-      reverse: true,
-    },
-    
-  ];
+export default function FeatureSection({sections}) {
 
   return (
     <div className="container my-5">
@@ -34,11 +17,15 @@ export default function FeatureSection() {
         >
           {/* Content */}
           <div className="flex-grow-1 me-md-4">
-            <h2 className={styles.heading}>{section.heading}</h2>
+            <div
+              className="bg-primary mb-3"
+              style={{ width: "60px", height: "3px" }}
+            ></div>
+            <h1 className="display-5 mb-4">{section.heading}</h1>
             <p className={styles.text}>{section.text}</p>
-            <button className="btn bg-primary color-w rounded-pill py-3 px-5 fs-5 cta-hover">
+            {/* <button className="btn bg-primary color-w rounded-pill py-3 px-5 fs-5 cta-hover">
               {section.cta}
-            </button>
+            </button> */}
           </div>
 
           {/* Image */}

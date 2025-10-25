@@ -30,12 +30,12 @@ export default function Testimonial() {
       img: "/images/testimonial-3.jpg",
     },
     {
-        id: 4,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro?",
-        name: "Client Two",
-        profession: "Profession",
-        img: "/images/testimonial-2.jpg",
-      }
+      id: 4,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro?",
+      name: "Client Four",
+      profession: "Profession",
+      img: "/images/testimonial-2.jpg",
+    },
   ];
 
   return (
@@ -51,19 +51,16 @@ export default function Testimonial() {
 
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={{ 
-            delay: 2000, 
+          autoplay={{
+            delay: 2000,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true 
+            pauseOnMouseEnter: true,
           }}
           loop={true}
           spaceBetween={30}
           centeredSlides={true}
           slidesPerView="auto"
-          pagination={{ 
-            clickable: true,
-            dynamicBullets: true 
-          }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           className={styles.testimonialCarousel}
         >
           {testimonials.map((t) => (

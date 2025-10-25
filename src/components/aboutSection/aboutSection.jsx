@@ -76,7 +76,7 @@ export default function AboutSection({ aboutData }) {
                               />
                             ) : (
                               "0"
-                            )}
+                            )}+
                           </h2>
                           <p className="fw-medium fs-5 color-primary mb-0">
                             {item.label}

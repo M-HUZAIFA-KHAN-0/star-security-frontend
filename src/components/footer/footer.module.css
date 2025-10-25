@@ -148,4 +148,10 @@
   .logoColor2 {
     color: #fff;
   }
+
+  @media (max-width: 767px) {
+    .footerEndRow {
+      flex-direction: column-reverse;
+    }
+  }
   

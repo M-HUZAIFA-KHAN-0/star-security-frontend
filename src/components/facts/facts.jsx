@@ -9,19 +9,19 @@ export default function Facts() {
       id: "01",
       icon: "/icon/icon-3.png",
       title: "Home Security",
-      text: "Vero elitr justo clita lorem ipsum dolor at sed stet sit diam rebum ipsum et diam justo clita et",
+      text: "Advanced home protection solutions with alarms, CCTV, and monitoring systems to keep your family and property safe.",
     },
     {
       id: "02",
       icon: "/icon/icon-4.png",
       title: "Access Control",
-      text: "Vero elitr justo clita lorem ipsum dolor at sed stet sit diam rebum ipsum et diam justo clita et",
+      text: "Smart card, biometric, and keypad systems to regulate and monitor entry points with precision and reliability.",
     },
     {
       id: "03",
       icon: "/icon/icon-2.png",
       title: "24/7 Support",
-      text: "Vero elitr justo clita lorem ipsum dolor at sed stet sit diam rebum ipsum et diam justo clita et",
+      text: "Dedicated security assistance and monitoring available round-the-clock to ensure uninterrupted protection and peace of mind.",
     },
   ];
 
