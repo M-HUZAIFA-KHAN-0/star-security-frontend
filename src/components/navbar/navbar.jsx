@@ -36,6 +36,8 @@ function Navigation() {
                         <Link href="/" className={styles.logo}>
                             <span className={styles.logoYellow}>Star </span>
                             <span className={styles.logoBlack}>Security</span>
+
+                            {/* <img src="/icon/star-security.png" alt="Star Security Logo" className={styles.logoImage} /> */}
                         </Link>
                     </Navbar.Brand>
 
